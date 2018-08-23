@@ -11,6 +11,7 @@ Created on Wed Aug 22 22:24:58 2018
 # import required libraries
 import timeit
 start = timeit.default_timer()
+print('Execution Started....')
 import tracemalloc
 tracemalloc.start()
 import re
@@ -223,7 +224,7 @@ print("Total number of News articles analysed for Trends:",len(all_newsitems_url
 print("Number of unique locations from which News articles are published",len(location_data))
 print("Number of days considered",len(date_data))
 print("Number of unique catogeries",len(category_data1))
-print("Number of uniquet tags included",len(tags_data1))
+print("Number of unique tags included",len(tags_data1))
 
 snapshot = tracemalloc.take_snapshot()
 top_stats = snapshot.statistics('lineno')
@@ -239,6 +240,9 @@ for stat in top_stats[:1]:
     memory = memory[-1]
 
 print("Memory Allocated:",memory)
+
+print('Execution successful...')
+print('Plots are saved in the current directory ')
 
 stop = timeit.default_timer()
 
