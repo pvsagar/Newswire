@@ -95,11 +95,11 @@ for url in all_newsitems_urls:
     tags5 = ' '.join(tags4)
     tags = tags + ", " + tags5
     
-categories = category.split(",")
-tags_d = tags.split(",")
+category_data = category.split(",")
+tags_data = tags.split(",")
 
-categories = category_data[1:]
-tags_d = tags_data[1:]    
+category_data = category_data[1:]
+tags_data = tags_data[1:]    
 
 
 # plots
@@ -160,10 +160,10 @@ plt.show()
 
 # category plot
 
-df3 = pd.DataFrame(categories)
+df3 = pd.DataFrame(category_data)
 df3.columns =['Category']
-category_data = df3['Category'].value_counts()
-top20_category = category_data.head(20)
+category_data1 = df3['Category'].value_counts()
+top20_category = category_data1.head(20)
 
 category_dataframe = pd.DataFrame({'Category':top20_category.index,
                                    'Frequency':top20_category.values})
@@ -189,10 +189,10 @@ plt.show()
 
 
 # Tags Plot
-df4 = pd.DataFrame(tags_d)
+df4 = pd.DataFrame(tags_data)
 df4.columns =['Tags']
-tags_data = df4['Tags'].value_counts()
-top20_tags = tags_data.head(20)
+tags_data1 = df4['Tags'].value_counts()
+top20_tags = tags_data1.head(20)
 
 tags_dataframe = pd.DataFrame({'Tag':top20_tags.index,
                                    'Frequency':top20_tags.values})
@@ -215,10 +215,11 @@ plt.savefig('Top 20 Tags included in articles and their frequencies.png',
             bbox_inches = 'tight')
 plt.show()
 
+print("Total number of News articles analysed for Trends:",len(all_newsitems_urls))
 print("Number of unique locations from which News articles are published",len(location_data))
 print("Number of days considered",len(date_data))
-print("Number of unique catogeries",len(category_data))
-print("Number of uniquet tags included",len(tags_data))
+print("Number of unique catogeries",len(category_data1))
+print("Number of uniquet tags included",len(tags_data1))
 
 snapshot = tracemalloc.take_snapshot()
 top_stats = snapshot.statistics('lineno')
