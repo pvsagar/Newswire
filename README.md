@@ -4,9 +4,10 @@ Total Run time = approx. 300 sec.
 
 Installation and execution Instructions:
 1. To run this code, you need Anaconda Spyder 3(preferred). which can be downloaded at "https://www.anaconda.com/download/".
-    1.1. To download Spyder 3 IDE, click on above link and download "Python 3.6 version".
-    1.2. upon downloading, start installation and follow the instructions given by install wizard for successful installation.
-    1.3. navigate to the directory where Anaconda3 is installed, open the directory and launch "Spyder".
+o	To download Spyder 3 IDE, click on above link and download "Python 3.6 version".
+o	Upon downloading, start installation and follow the instructions given by install wizard for successful installation.
+o	Navigate to the directory where Anaconda3 is installed, open the directory and launch "Spyder".
+
 2. Clone the repo on to your PC and open "newswire_trends.py" file in Spyder.
 3. Run the "newswire_trends.py" file by pressing F5 or Run button.
 4. 4 plots will be created in the directory where you save the code to execute it.
