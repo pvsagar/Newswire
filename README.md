@@ -4,9 +4,9 @@ Total Run time = approx. 300 sec.
 
 Installation and execution Instructions:
 1. To run this code, you need Anaconda Spyder 3(preferred). which can be downloaded at "https://www.anaconda.com/download/".
-o	To download Spyder 3 IDE, click on above link and download "Python 3.6 version".
-o	Upon downloading, start installation and follow the instructions given by install wizard for successful installation.
-o	Navigate to the directory where Anaconda3 is installed, open the directory and launch "Spyder".
+- To download Spyder 3 IDE, click on above link and download "Python 3.6 version".
+- Upon downloading, start installation and follow the instructions given by install wizard for successful installation.
+- Navigate to the directory where Anaconda3 is installed, open the directory and launch "Spyder".
 
 2. Clone the repo on to your PC and open "newswire_trends.py" file in Spyder.
 3. Run the "newswire_trends.py" file by pressing F5 or Run button.
@@ -15,13 +15,13 @@ o	Navigate to the directory where Anaconda3 is installed, open the directory and
 Summary of output:
 1. Output is a result of analysis of 1600 News articles present in 1-50 pages of "https://www.newswire.com/newsroom" which in turn are 1600 separate web pages or documents.
 2. News articles were published from 567 locations, top 20 locations and the number of articles from the respective locations is plotted.
-    2.1. Highest number of the articles are published from New York, followed by Los Angeles.
+- Highest number of the articles are published from New York, followed by Los Angeles.
 3. News articles from past 33 days (as of Aug 23, 2:50 AM) are considered under analysis, top 30 days and the number of articles published on those days is plotted.
-    3.1. Very few articles are being published on weekends.
+- Very few articles are being published on weekends.
 4. News articles were classified into 379 unique categories, top 20 categories and the number of articles published under them is plotted.
-    4.1. Finance and Business related articles take a major share among all articles.
+- Finance and Business related articles take a major share among all articles.
 5. 7186 unique Tags were mentioned overall, top 20 tags and the number of articles published under them is plotted.
-    5.1. Student loans and Crypto currency related technologies were trending.
+- Student loans and Crypto currency related technologies were trending.
 
 Challenges Faced:
 1. missing data types. 
